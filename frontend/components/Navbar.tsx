@@ -13,11 +13,13 @@ export default function Navbar() {
         src={LOGO}
         alt="brandev22 logo"
       />
+
       <NavOptions className="nav-links">
-        <a href="#About">About</a>
-        <a href="#Skills">Skills</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Contact">Contact</a>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+        <a href="/login">Login</a>
       </NavOptions>
     </Nav>
   );

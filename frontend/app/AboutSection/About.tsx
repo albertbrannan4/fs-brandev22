@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./aboutSection.module.css";
+import styles from "./About.module.css";
 import SelfPortrait from "../../public/media/banner 1 - Copy.jpeg";
 import BootstrapIcon from "../../public/media/bootstrap icon sq.png";
 import JavaScriptIcon from "../../public/media/js icon sq.png";
@@ -9,7 +9,7 @@ import NodejsIcon from "../../public/media/nodejs icon sql.png";
 import ReactIcon from "../../public/media/react icon sq.png";
 import GitIcon from "../../public/media/git icon sq.png";
 import BloomTechCert from "../../public/media/BloomTech Certificate of Completion - Albert Brannan (Full Stack Web Development).pdf.png";
-export default function AboutSection() {
+export default function About() {
   return (
     <div>
       <div className={styles.imgAfterHeader}></div>
