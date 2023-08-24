@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./About.module.css";
+import styles from "../../styles/About.module.css";
 import BootstrapIcon from "../../public/media/bootstrap icon sq.png";
 import JavaScriptIcon from "../../public/media/js icon sq.png";
 import HTMLIcon from "../../public/media/html icon sql.png";

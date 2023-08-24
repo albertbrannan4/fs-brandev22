@@ -77,5 +77,5 @@ const StyledForm = styled.form`
   border-radius: 10px;
   background-color: gray;
   border-shaow
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 4px 5px #000;
 `;

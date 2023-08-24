@@ -1,8 +1,8 @@
 import { Inter } from "next/font/google";
-import About from "@/components/AboutSection/About";
+
 import SelfPortrait from "../public/media/banner 1 - Copy.jpeg";
 import Image from "next/image";
-import styles from "../components/AboutSection/About.module.css";
+import styles from "../styles/Home.module.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -27,10 +27,10 @@ export default function Home() {
                   <span>Website.</span>
                 </li>
                 <li className={styles.choice}>
-                  <span>Brand.</span>
+                  <span>Software.</span>
                 </li>
                 <li className={styles.choice}>
-                  <span>Confidence.</span>
+                  <span>Brand.</span>
                 </li>
               </ul>
             </div>
