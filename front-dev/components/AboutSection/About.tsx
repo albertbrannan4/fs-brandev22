@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./About.module.css";
-import SelfPortrait from "../../public/media/banner 1 - Copy.jpeg";
 import BootstrapIcon from "../../public/media/bootstrap icon sq.png";
 import JavaScriptIcon from "../../public/media/js icon sq.png";
 import HTMLIcon from "../../public/media/html icon sql.png";
@@ -13,33 +12,6 @@ import BloomTechCert from "../../public/media/BloomTech Certificate of Completio
 export default function About() {
   return (
     <div>
-      <div className={styles.imgAfterHeader}></div>
-      <section id="About" className={styles.about}>
-        <div className={styles.aboutContent}>
-          <Image
-            className={styles.selfPortrait}
-            src={SelfPortrait}
-            alt="Self Portrait"
-            width={200}
-            height={200}
-          />
-
-          <div className={styles.wrapper}>
-            <div className={styles.staticText}>Build your</div>
-            <ul className={styles.dynamicTexts}>
-              <li className={styles.choice}>
-                <span>Website.</span>
-              </li>
-              <li className={styles.choice}>
-                <span>Brand.</span>
-              </li>
-              <li className={styles.choice}>
-                <span>Confidence.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
       <section className={styles.tech}>
         <div className={styles.techBar}>
           <Image

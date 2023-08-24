@@ -15,4 +15,6 @@ const PageStyle = styled.div`
   justify-content: center;
   align-items: center;
   height: 90vh;
+  border: 1px solid green;
+  width: 100%;
 `;

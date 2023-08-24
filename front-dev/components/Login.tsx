@@ -44,6 +44,7 @@ export default function Login(props: Props) {
           name="Email"
           required
           onChange={HandleChanges}
+          style={InputStyle}
         />
 
         <TextField
@@ -52,6 +53,7 @@ export default function Login(props: Props) {
           name="Password"
           required
           onChange={HandleChanges}
+          style={InputStyle}
         />
 
         <Button variant="contained" type="submit" size="large">
@@ -61,11 +63,19 @@ export default function Login(props: Props) {
     </Page>
   );
 }
-
+const InputStyle = {
+  backgroundColor: "white",
+};
 const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   height: 40vh;
   justify-content: space-evenly;
   width: 30%;
+  padding: 2%;
+  border: 1px solid green;
+  border-radius: 10px;
+  background-color: gray;
+  border-shaow
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 `;
