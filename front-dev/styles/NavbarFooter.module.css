@@ -1,0 +1,25 @@
+.navLinks {
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1em;
+}
+
+.nav {
+  background-color: #28282b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+  height: 12vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  border-bottom: 1px solid grey;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*Footer*/
