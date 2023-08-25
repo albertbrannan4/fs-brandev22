@@ -1,11 +1,11 @@
-import Login from "@/components/Login";
+import LoginForm from "@/components/LoginForm";
 import Page from "@/components/Page";
 import HandleSubmissions from "@/components/Utils/HandleSubmissions";
 
 const LoginPage = () => {
   return (
     <Page>
-      <Login handleSubmissions={HandleSubmissions} />
+      <LoginForm handleSubmissions={HandleSubmissions} />
     </Page>
   );
 };

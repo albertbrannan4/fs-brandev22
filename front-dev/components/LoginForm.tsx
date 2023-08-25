@@ -16,7 +16,7 @@ const InitialState: LoginInterface = {
   Password: "",
 };
 
-export default function Login(props: Props) {
+export default function LoginForm(props: Props) {
   const [input, setInput] = useState<LoginInterface>(InitialState);
 
   const HandleChanges = (e: React.ChangeEvent<HTMLInputElement>) => {
