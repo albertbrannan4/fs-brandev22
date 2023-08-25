@@ -6,13 +6,19 @@ import githubLogo from "@/public/media/github logo.png";
 import discordLogo from "@/public/media/discord logo.png";
 import linkedInLogo from "@/public/media/linkdin logo.png";
 import whiteLogo from "@/public/media/logowhite.png";
+import styles from "@/styles/NavbarFooter.module.css";
+
+const Icons = {
+  width: "50px",
+  height: "50px",
+};
 
 export default function Footer() {
   return (
-    <StyledFooter>
-      <FooterContainer className="footer-container">
+    <footer className={styles.footer}>
+      <div className={styles.footerContainer}>
         <div>
-          <LocationInfo className="location-info">
+          <div className={styles.locationInfo}>
             <h3>
               CONTACT
               <br />
@@ -24,9 +30,9 @@ export default function Footer() {
               <br />
               FL, 32256 <br />
             </address>
-          </LocationInfo>
+          </div>
 
-          <SocialMediaIcons className="social-media-icons">
+          <div className={styles.socialMediaIcons}>
             <Link href="https://github.com/albertbrannan4" target="_blank">
               <Image
                 style={Icons}
@@ -54,7 +60,7 @@ export default function Footer() {
                 alt=""
               />
             </Link>
-          </SocialMediaIcons>
+          </div>
         </div>
 
         <Image
@@ -63,48 +69,7 @@ export default function Footer() {
           src={whiteLogo}
           alt=""
         />
-      </FooterContainer>
-    </StyledFooter>
+      </div>
+    </footer>
   );
 }
-
-const Icons = {
-  width: "50px",
-  height: "50px",
-};
-
-const StyledFooter = styled.footer`
-  height: 10rem;
-  background-color: #28282b;
-  color: white;
-  width: 100%;
-  padding: 2%;
-  display: flex;
-  justify-content: center;
-  border-top: 1px solid grey;
-`;
-
-const FooterContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-`;
-
-const SocialMediaIcons = styled.div`
-  display: flex;
-`;
-
-const LocationInfo = styled.div`
-  padding-left: 10%;
-  font-size: 0.8em;
-  width: 100%;
-`;
-
-/*
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  */

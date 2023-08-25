@@ -23,3 +23,30 @@
 /*-----------------------------------------------------------------*/
 
 /*Footer*/
+
+.footer {
+  height: 10rem;
+  background-color: #28282b;
+  color: white;
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid grey;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.locationInfo {
+  padding-left: 10%;
+  font-size: 0.8em;
+  width: 100%;
+}
+
+.socialMediaIcons {
+  display: flex;
+}
