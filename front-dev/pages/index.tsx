@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Logo from "@/public/media/logowhite.png";
+import YouTube from "react-youtube";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -85,7 +87,13 @@ export default function Home() {
         </section>
         <section className={styles.youTubeWalkThrough}>
           <h2>Website Walkthrough</h2>
+          <YouTube videoId="iYDyTmTWUOM" />
         </section>
+        {/* <section>
+          <div className="newsletter">
+            <input type="text" />
+          </div>
+        </section> */}
       </main>
     </>
   );

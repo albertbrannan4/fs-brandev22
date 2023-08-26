@@ -38,7 +38,7 @@
 .footerContainer {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
 }
 
 .locationInfo {
@@ -49,4 +49,9 @@
 
 .socialMediaIcons {
   display: flex;
+}
+
+.brandLogo {
+  width: 12%;
+  height: 100%;
 }
