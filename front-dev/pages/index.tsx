@@ -10,27 +10,28 @@ export default function Home() {
   return (
     <>
       <main>
-        <div className={styles.imgAfterHeader}>
-          <Image src={Logo} alt="Brandev22 Logo" className={styles.Logo} />
-          <section id="About" className={styles.about}>
-            <div className={styles.aboutContent}>
-              <div className={styles.TypingWrapper}>
-                <div className={styles.staticText}>Build your</div>
-                <ul className={styles.dynamicTexts}>
-                  <li className={styles.choice}>
-                    <span>Website.</span>
-                  </li>
-                  <li className={styles.choice}>
-                    <span>Software.</span>
-                  </li>
-                  <li className={styles.choice}>
-                    <span>Brand.</span>
-                  </li>
-                </ul>
-              </div>
+        <section className={styles.Header}>
+          <div className={styles.headerContent}>
+            <Image src={Logo} alt="logo" width={620} className={styles.Logo} />
+            <div className={styles.wrapper}>
+              <div className={styles.staticText}>Build your</div>
+              <ul className={styles.dynamicTexts}>
+                <li className={styles.choice}>
+                  <span>Website.</span>
+                </li>
+                <li className={styles.choice}>
+                  <span>Software.</span>
+                </li>
+                <li className={styles.choice}>
+                  <span>Business.</span>
+                </li>
+                <li className={styles.choice}>
+                  <span>Brand.</span>
+                </li>
+              </ul>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
         <section className={styles.missionStatement}>
           <div className={styles.missionText}>
             <p>

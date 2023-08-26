@@ -1,100 +1,99 @@
-.imgAfterHeader {
-  border-top: 1px solid orange;
-  background-image: url("../public/media/ComputerImg.jpg");
-  height: 75vh;
-  background-position: center center;
-  background-size: cover;
+.Header {
+  height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../public/media/ComputerImg.jpg");
+  background-position: center center;
+  background-size: cover;
+  font-size: 1.2rem;
 }
 
-.imgAfterHeader::before {
-  content: ""; /* Create a pseudo-element */
-  position: absolute; /* Position it absolutely within the container */
+.Header::before {
+  content: "";
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 75vh;
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black color */
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the alpha value for the desired tint darkness */
+  pointer-events: none; /* Allows clicking through the overlay to the image */
 }
 
-.aboutContent {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3.4rem;
-  font-family: "Ysabeau SC", sans-serif;
-  font-weight: 400;
+.headerContent {
+  background-color: #28282b;
+  border: 1px solid white;
+  padding: 2%;
+  box-shadow: 4px 2px rgba(255, 255, 255, 0.515),
+    -1em 0 0.4em rgba(255, 255, 255, 0.234);
+  z-index: 1;
 }
 
 .Logo {
-  z-index: 1;
-  position: relative;
-  width: 50rem;
-  height: 16rem;
-  left: 9%;
+  margin-bottom: 1%;
+  padding-bottom: 2%;
 }
 
 /*-------------------Dont touch below-------------------------------*/
 
-.TypingWrapper {
+.wrapper {
+  display: inline-flex;
+  font-family: "Poppins", sans-serif;
   display: flex;
-  margin-left: 5%;
+  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  box-sizing: border-box;
-  position: relative; /* Set the position to relative */
-  background-color: #0a0a0a;
-  top: 220px;
-  left: 350px;
 }
 
-.dynamicTexts {
-  margin-left: 10px;
-  line-height: 90px;
-  height: 90px;
+.wrapper .staticText {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.wrapper .dynamicTexts {
+  line-height: 50px;
+  height: 50px;
   overflow: hidden;
 }
 
-.staticText {
-  margin: 0;
-  font-weight: 400;
-}
-
-.choice {
+.dynamicTexts li {
   list-style: none;
-  color: rgb(241, 183, 96);
+  font-size: 30px;
   font-weight: 500;
+  color: #ffa500;
   position: relative;
   top: 0;
-  animation: slide 9s steps(3) infinite;
-}
-
-.choice::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  border-left: 2px solid rgb(235, 150, 71);
-  background-color: #0a0a0a;
-  animation: typing 3s steps(12) infinite;
-}
-
-@keyframes typing {
-  40%,
-  60% {
-    left: calc(100% + 30px);
-  }
-  100% {
-    left: 0;
-  }
+  animation: slide 10s steps(4) infinite;
 }
 @keyframes slide {
   100% {
-    top: -270px;
+    top: -200px;
+  }
+}
+
+.dynamicTexts li span {
+  position: relative;
+}
+
+.dynamicTexts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 120%;
+  background-color: #28282b;
+  width: 100%;
+  border-left: 2px solid #ffa500;
+  animation: typing 2.5s steps(8) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
   }
 }
 
@@ -120,7 +119,7 @@
 
 .youTubeWalkThrough {
   background-color: #c6c0c0;
-  height: 120vh;
+  height: 100vh;
   border: 0.5px solid black;
   color: #000;
   display: flex;
