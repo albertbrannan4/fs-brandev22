@@ -6,12 +6,7 @@ import styles from "../styles/NavbarFooter.module.css";
 export default function Navbar() {
   return (
     <nav className={styles.nav}>
-      <Image
-        style={{ width: "220px", height: "70px" }}
-        className="brand-logo"
-        src={LOGO}
-        alt="brandev22 logo"
-      />
+      <Image className={styles.brandLogo} src={LOGO} alt="brandev22 logo" />
 
       <div className={styles.navLinks}>
         <Link href="/">Home</Link>

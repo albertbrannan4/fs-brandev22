@@ -87,7 +87,7 @@
   background-color: #28282b;
   width: 100%;
   border-left: 2px solid #ffa500;
-  animation: typing 2.5s steps(8) infinite;
+  animation: typing 2.5s steps(12) infinite;
 }
 
 @keyframes typing {
