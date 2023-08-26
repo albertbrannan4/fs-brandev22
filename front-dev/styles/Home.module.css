@@ -4,45 +4,51 @@
   height: 75vh;
   background-position: center center;
   background-size: cover;
-}
-
-.about {
-  display: flex;
-  justify-content: center;
-  transform: translateY(-55%);
-}
-
-.aboutContent {
-  border: 1px solid black;
-  border-radius: 35px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  width: 45%;
-  height: 50vh;
-  padding: 3%;
-  color: white;
-  background-color: #1e1e1e;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.9rem;
+}
+
+.imgAfterHeader::before {
+  content: ""; /* Create a pseudo-element */
+  position: absolute; /* Position it absolutely within the container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75vh;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black color */
+}
+
+.aboutContent {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.4rem;
   font-family: "Ysabeau SC", sans-serif;
   font-weight: 400;
-  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-.selfPortrait {
-  background-size: cover;
-  border-radius: 200px;
-  border: 1px solid whitesmoke;
-  box-shadow: 0 0 5px #ffffff8e;
+.Logo {
+  z-index: 1;
+  position: relative;
+  width: 50rem;
+  height: 16rem;
+  left: 9%;
 }
 
-.wrapper {
+/*-------------------Dont touch below-------------------------------*/
+
+.TypingWrapper {
   display: flex;
   margin-left: 5%;
   justify-content: center;
   flex-direction: column;
   box-sizing: border-box;
+  position: relative; /* Set the position to relative */
+  background-color: #0a0a0a;
+  top: 220px;
+  left: 350px;
 }
 
 .dynamicTexts {
@@ -73,7 +79,7 @@
   width: 100%;
   left: 0;
   border-left: 2px solid rgb(235, 150, 71);
-  background-color: #1e1e1e;
+  background-color: #0a0a0a;
   animation: typing 3s steps(12) infinite;
 }
 
@@ -89,5 +95,50 @@
 @keyframes slide {
   100% {
     top: -270px;
+  }
+}
+
+/*-------------------------------------------------------*/
+
+.missionStatement {
+  background-color: aliceblue;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.missionText {
+  width: 55%;
+}
+
+.missionText p {
+  margin: 3%;
+}
+
+/* ----------------------------------------------------------*/
+
+.youTubeWalkThrough {
+  background-color: #8f8989;
+  height: 60vh;
+  border: 0.5px solid black;
+  color: #000;
+}
+
+/* ----------------------------------------------------------*/
+
+@media (max-width: 1300px) {
+  .Logo {
+    width: 35rem;
+    height: 11rem;
+  }
+  .aboutContent {
+    font-size: 2.5rem;
+  }
+  .TypingWrapper {
+    top: 110px;
+    left: 230px;
+
+    padding: 3%;
   }
 }
