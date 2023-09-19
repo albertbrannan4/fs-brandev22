@@ -30,7 +30,7 @@
   border: 1px solid white;
   padding: 2%;
   box-shadow: 4px 2px rgba(255, 255, 255, 0.515),
-    -1em 0 0.4em rgba(255, 255, 255, 0.234);
+    -0.25em 0 0.4em rgba(255, 255, 255, 0.234);
   z-index: 1;
 }
 
@@ -130,7 +130,8 @@
 .youTubeWalkThrough h2 {
   margin-bottom: 4%;
   font-size: 3.4rem;
-  font-family: monospace;
+  font-family: "Poppins", sans-serif;
+  -webkit-text-stroke: 2px rgba(246, 242, 242, 0.538);
 }
 
 /* ----------------------------------------------------------*/
