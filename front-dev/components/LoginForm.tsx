@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import styled from "styled-components";
 import Page from "./Page";
-
+import HandleSubmissions from "./Utils/HandleSubmissions";
 interface LoginInterface {
   Email: string;
   Password: string;
@@ -31,7 +31,11 @@ export default function LoginForm(props: Props) {
       Email: Email.trim(),
       Password: Password.trim(),
     };
-
+    HandleSubmissions(
+      "post",
+      "http://localhost:5000/api/auth/login",
+      cleanData
+    );
     console.log(cleanData);
   };
 
