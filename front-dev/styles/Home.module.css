@@ -52,6 +52,7 @@
 .wrapper .staticText {
   font-size: 30px;
   margin-right: 10px;
+  color: whitesmoke;
 }
 
 .wrapper .dynamicTexts {

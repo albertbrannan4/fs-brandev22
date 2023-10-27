@@ -1,4 +1,7 @@
 from flask import Blueprint, jsonify, request
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 authentication = Blueprint('login', __name__)
 
@@ -11,3 +14,13 @@ def login():
     else:
         return path('/api/home')
 
+
+
+@authentication.route("/email",methods=["POST"])
+def send_email():
+    if request.method=='POST':
+        subject = request.form['subject']
+        body = request.form['body']
+        return jsonify(f"Subject {subject}: {body}")
+    else:
+        return path('/api/home')
